@@ -364,7 +364,11 @@ extern struct cpufreq_governor cpufreq_gov_interactive;
 #elif defined(CONFIG_CPU_FREQ_DEFAULT_GOV_K3HOTPLUG)
 extern struct cpufreq_governor cpufreq_gov_k3hotplug;
 #define CPUFREQ_DEFAULT_GOVERNOR	(&cpufreq_gov_k3hotplug)
+#elif defined(CONFIG_CPU_FREQ_DEFAULT_GOV_SMARTASS)
+extern struct cpufreq_governor cpufreq_gov_smartass;
+#define CPUFREQ_DEFAULT_GOVERNOR (&cpufreq_gov_smartass)
 #endif
+
 
 
 /*********************************************************************
